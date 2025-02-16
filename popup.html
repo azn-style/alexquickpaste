@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlexQuickPaste</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 10px;
+      width: 300px;
+      height: 400px;
+      resize: both;
+      overflow: auto;
+      border-radius: 50px;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 5px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    li > div { /* Conteneur des icônes */
+      display: flex;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #ccc; /* Séparateur */
+      padding-bottom: 5px;
+    }
+
+    li > div > button { /* Boutons (icônes) */
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 100%;
+      height: 60px; /* Taille initiale */
+      margin-bottom: 10px;
+    }
+
+    #listeReponses {
+      list-style: none;
+      padding: 0;
+    }
+
+    #listeReponses li p { /* Texte de la réponse */
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    #alexlab {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    #alexlab a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .monter, .descendre {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>AlexQuickPaste</h1>
+  <ul id="listeReponses"></ul>
+  <textarea id="nouvelleReponse"></textarea>
+  <button id="ajouter">Ajouter</button>
+  <div id="alexlab">
+    <a href="https://alexlab.fr/" target="_blank">alexlab.fr</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
