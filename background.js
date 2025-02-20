@@ -6,11 +6,11 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 
   const reponsesInitiales = [
-    "Bonjour, merci de nous contacter !\n\nCeci est un exemple de réponse\navec plusieurs lignes.",
-    "Veuillez trouver ci-joint les informations demandées.\n\nCordialement,\nVotre équipe.",
-    "Nous vous répondrons dans les plus brefs délais.\n\nMerci de votre patience.",
-    "J'ai besoin d'aide pour résoudre un problème.\n\nPourriez-vous me contacter au plus vite ?",
-    "Merci beaucoup pour votre assistance.\n\nJe reste à votre disposition pour toute question complémentaire."
+    "Bonjour,\n\nJe vous confirme la création du compte :\n\nEmail : \nPassword : \n\nBien cordialement,",
+    "Bonjour,\n\nLe problème est maintenant résolu\n\nBien cordialement,",
+    "Bonjour,\n\nNous vous répondrons dans les plus brefs délais.\n\nMerci de votre patience,\n\nBien cordialement,",
+    "Bonjour,\n\nPeux tu me donner les droits sur O365.\n\nMerci d'avance,\n\nBien cordialement,",
+    "Bonjour,\n\nJe transfere à l'équipe logiciel.\n\nBien cordialement,"
   ];
 
   chrome.storage.local.set({ reponses: reponsesInitiales }, () => {
